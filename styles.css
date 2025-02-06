@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: #111;
+}
+h1 {
+  padding: 35px;
+  color: white;
+}
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  margin: 1.5rem 0.5rem;
+  border: 1px solid white;
+}
+@media (min-width: 1440px) {
+  .todoItem {
+    margin: 1.5rem 10rem;
+  }
+}
+@media (min-width: 2560px) {
+  .todoItem {
+    margin: 1.5rem 40rem;
+  }
+}
+@media (max-width: 1920px) {
+  .todoItem {
+    margin: 1.5rem 15rem;
+  }
+}
+#taskInput {
+  all: unset;
+  color: white;
+  border: 1px solid white;
+  width: 24rem;
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.add {
+  all: unset;
+  border: 1px solid white;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.add:hover {
+  color: green;
+  border-color: green;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.remove {
+  all: unset;
+  border: 1px solid white;
+  padding: 0.2rem;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: red;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.remove:hover {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
